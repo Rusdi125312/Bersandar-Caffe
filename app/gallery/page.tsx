@@ -51,7 +51,7 @@ export default function GalleryPage() {
 
           {/* Kanan: Hamburger (Mobile) & Reservasi (Desktop) */}
           <div className="flex justify-end items-center">
-            <a href="/reservasi" className="hidden md:block border border-white/20 hover:border-[#D4A373] px-6 py-2 rounded-xl hover:bg-[#D4A373] transition">
+            <a href="https://wa.me/6285720937430?text=Halo%20Admin%20Bersandar,%20saya%20ingin%20reservasi." className="hidden md:block border border-white/20 hover:border-[#D4A373] px-6 py-2 rounded-xl hover:bg-[#D4A373] transition">
               Reservasi
             </a>
 

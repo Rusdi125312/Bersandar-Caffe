@@ -87,8 +87,8 @@ export default function Home() {
             <a href="/" onClick={() => setMenuOpen(false)}>Home</a>
             <a href="/menu" onClick={() => setMenuOpen(false)}>Menu</a>
             <a href="/gallery" onClick={() => setMenuOpen(false)}>Gallery</a>
-            <a href="#" onClick={() => setMenuOpen(false)}>Contact</a>
-            <a href="#" className="mt-4 bg-[#D4A373] px-8 py-3 rounded-xl flex items-center gap-2">
+            <a href="/contact" onClick={() => setMenuOpen(false)}>Contact</a>
+            <a href="https://maps.app.goo.gl/6XYDm94RiDr1RMSy5" className="mt-4 bg-[#D4A373] px-8 py-3 rounded-xl flex items-center gap-2">
               <MapPin size={16} /> Lokasi Kami
             </a>
           </div>
@@ -139,7 +139,7 @@ export default function Home() {
             </button>
           </Link>
 
-          <a href="[https://wa.me/6285720937430?text=Halo%20Admin%20Bersandar,%20saya%20ingin%20melakukan%20reservasi%20tempat](https://wa.me/6285720937430?text=Halo%20Admin%20Bersandar,%20saya%20ingin%20melakukan%20reservasi%20tempat).">
+          <a href="https://wa.me/6285720937430?text=Halo%20Admin%20Bersandar,%20saya%20ingin%20melakukan%20reservasi%20tempat">
             <button className="w-full justify-center flex items-center gap-3 border border-white/30 hover:bg-white/10 px-8 py-4 rounded-xl transition">
               <Calendar size={20} /> <span>Reservasi Space</span>
             </button>

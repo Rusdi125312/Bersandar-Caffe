@@ -144,7 +144,9 @@
         <a href="/gallery" onClick={() => setMenuOpen(false)}>Gallery</a>
         <a href="/contact" onClick={() => setMenuOpen(false)}>Contact</a>
         {/* Tombol Reservasi masuk ke sini */}
-        <a href="/reservasi" className="border border-[#D4A373] px-8 py-3 rounded-xl bg-[#D4A373] text-black font-bold">Reservasi</a>
+        <a href="https://wa.me/6285720937430?text=Halo%20Admin%20Bersandar,%20saya%20ingin%20reservasi." className="border border-[#D4A373] px-8 py-3 rounded-xl bg-[#D4A373] text-black font-bold" target="_blank" rel="noopener noreferrer">
+          Reservasi
+        </a>
       </div>
     )}
   </header>

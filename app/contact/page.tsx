@@ -37,7 +37,7 @@ export default function ContactPage() {
             <a href="/contact" className="text-[#D4A373]">Contact</a>
           </nav>
 
-          <a href="/reservasi" className="hidden md:block border border-[#D4A373] px-6 py-2 rounded-xl hover:bg-[#D4A373] transition">Reservasi</a>
+          <a href="https://wa.me/6285720937430?text=Halo%20Admin%20Bersandar,%20saya%20ingin%20reservasi." className="hidden md:block border border-[#D4A373] px-6 py-2 rounded-xl hover:bg-[#D4A373] transition">Reservasi</a>
           
           <button className="md:hidden z-50 p-2" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -66,7 +66,7 @@ export default function ContactPage() {
         <div className="grid md:grid-cols-2 gap-6">
           
           {/* WhatsApp */}
-          <a href="https://wa.me/6285720937430?text=Halo%20Admin%20Bersandar,%20saya%20ingin%20reservasi."
+          <a href="https://wa.me/6285720937430?text=Halo%20Admin."
          target="_blank" className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-[#25D366] transition group flex items-center gap-6">
             <div className="p-4 bg-[#25D366]/20 rounded-full text-[#25D366]"><MessageCircle size={32} /></div>
             <div>
