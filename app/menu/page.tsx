@@ -91,11 +91,8 @@
                 </Link>
           </div>
   {/* Tombol Hamburger (Hanya muncul di mobile) */}
-      <button 
-        className="md:hidden text-white p-2" 
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
-        {menuOpen ? <X size={28} /> : <Menu size={28} />}
+      <button className="md:hidden p-2 -mr-2" onClick={() => setMenuOpen(!menuOpen)}>
+                    {menuOpen ? <X size={32} /> : <Menu size={32} />}
       </button>
               <nav className="hidden ml-10 md:flex gap-10">
 

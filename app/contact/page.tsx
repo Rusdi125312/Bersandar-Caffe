@@ -18,17 +18,21 @@ export default function ContactPage() {
       </div>
 
       {/* NAVBAR */}
-      <header className="relative z-50">
-        <div className="max-w-7xl mx-auto px-6 py-8 flex items-center justify-between">
-            <Link href="/" className="relative ml-4 w-20 h-16 md:w-32 md:h-24 transition-transform hover:scale-105">
-                            <Image 
-                              src="/logo-bersandar1.png" 
-                              alt="Logo Bersandar"
-                              fill
-                              className="object-contain"
-                              priority
-                            />
-                          </Link>
+     <header className="absolute top-0 left-0 w-full z-50">
+       {/* Hapus div pembungkus tambahan, gunakan satu grid utama */}
+       <div className="w-full max-w-7xl mx-auto px-4 md:px-8 py-6 grid grid-cols-[1fr_auto] md:grid-cols-[1fr_auto_1fr] items-center">
+         {/* Logo (Kiri) - Merapat ke kiri */}
+         <div className="flex items-center gap-3 justify-start">
+             <Link href="/" className="relative ml-4 w-20 h-16 md:w-32 md:h-24 transition-transform hover:scale-105">
+                             <Image 
+                               src="/logo-bersandar1.png" 
+                               alt="Logo Bersandar"
+                               fill
+                               className="object-contain"
+                               priority
+                             />
+                           </Link>
+         </div>
           
           <nav className="hidden md:flex gap-10 font-medium">
             <a href="/" className="hover:text-[#D4A373] transition">Home</a>
@@ -46,14 +50,15 @@ export default function ContactPage() {
       </header>
 
       {/* MOBILE MENU DROPDOWN */}
-      {menuOpen && (
-        <div className="md:hidden absolute top-20 left-0 w-full bg-[#111]/95 backdrop-blur-md border-b border-white/10 flex flex-col items-center py-10 gap-6 z-40">
-          <a href="/" onClick={() => setMenuOpen(false)}>Home</a>
-          <a href="/menu" onClick={() => setMenuOpen(false)}>Menu</a>
-          <a href="/gallery" onClick={() => setMenuOpen(false)}>Gallery</a>
-          <a href="/contact" className="text-[#D4A373]" onClick={() => setMenuOpen(false)}>Contact</a>
-        </div>
-      )}
+       {menuOpen && (
+          <div className="md:hidden bg-[#111]/95 backdrop-blur-md p-6 flex flex-col items-center gap-6 border-b border-white/10">
+            <a href="/" onClick={() => setMenuOpen(false)}>Home</a>
+            <a href="/menu" onClick={() => setMenuOpen(false)}>Menu</a>
+            <a href="/gallery" className="text-[#D4A373]" onClick={() => setMenuOpen(false)}>Gallery</a>
+            <a href="/contact" onClick={() => setMenuOpen(false)}>Contact</a>
+            <a href="/reservasi" className="bg-[#D4A373] px-6 py-2 rounded-lg text-black font-bold">Reservasi</a>
+          </div>
+        )}
 
       {/* CONTACT HERO (Dibuat relative agar berada di atas background) */}
       <section className="relative z-10 py-20 px-6 text-center">
