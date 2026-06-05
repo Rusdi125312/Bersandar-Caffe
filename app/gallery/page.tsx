@@ -21,13 +21,10 @@ export default function GalleryPage() {
 
   return (
     <main className="min-h-screen bg-[#111111] text-white">
-      
-      {/* HEADER */}
       {/* HEADER - Disederhanakan agar logo bisa merapat ke kiri */}
-<header className="absolute top-0 left-0 w-full z-50">
+  <header className="absolute top-0 left-0 w-full z-50">
   {/* Hapus div pembungkus tambahan, gunakan satu grid utama */}
   <div className="w-full max-w-7xl mx-auto px-4 md:px-8 py-6 grid grid-cols-[1fr_auto] md:grid-cols-[1fr_auto_1fr] items-center">
-    
     {/* Logo (Kiri) - Merapat ke kiri */}
     <div className="flex items-center gap-3 justify-start">
         <Link href="/" className="relative ml-4 w-20 h-16 md:w-32 md:h-24 transition-transform hover:scale-105">
