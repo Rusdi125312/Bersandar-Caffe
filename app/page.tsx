@@ -98,7 +98,7 @@ export default function Home() {
       <section
   className="relative min-h-screen flex items-center px-6 md:px-16"
   style={{
-    backgroundImage: "url('/background-cafe.JPEG')",
+    backgroundImage: "url('/background-cafe.jpeg')",
     backgroundPosition: "center",
     backgroundSize: "cover",
   }}
