@@ -44,24 +44,23 @@ export default function Home() {
 
       {/* ================= NAVBAR ================= */}
   <nav className="absolute top-0 left-0 right-0 z-50">
-  <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
-    <div className="flex items-center gap-3">
-  {/* Menggantikan ikon ☕ dengan Logo Image */}
- <Link href="/" className="relative ml-4 w-20 h-16 md:w-32 md:h-24 transition-transform hover:scale-105">
-      <Image 
-        src="/logo-bersandar1.png" 
-        alt="Logo Bersandar"
-        fill
-        className="object-contain"
-        priority
-      />
-    </Link>
   
-  {/* Teks "BERSANDAR" dihapus karena sudah ada di dalam gambar logo */}
-</div>
+  <div className="w-full max-w-7xl mx-auto px-4 md:px-8 py-6 flex items-center justify-between">
+         {/* Logo (Kiri) - Merapat ke kiri */}
+         <div className="flex items-center gap-3 justify-start">
+             <Link href="/" className="relative ml-4 w-20 h-16 md:w-32 md:h-24 transition-transform hover:scale-105">
+                             <Image 
+                               src="/logo-bersandar1.png" 
+                               alt="Logo Bersandar"
+                               fill
+                               className="object-contain"
+                               priority
+                             />
+                           </Link>
+         </div>
           {/* Menu */}
        {/* Menu Desktop */}
-    <div className="hidden lg:flex items-center gap-12">
+    <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-10 font-medium">
       <a href="/" className="relative">Home<span className="absolute -bottom-3 left-0 w-full h-[2px] bg-[#D4A373]" /></a>
       <a href="/menu" className="hover:text-[#D4A373]">Menu</a>
       <a href="/gallery" className="hover:text-[#D4A373]">Gallery</a>

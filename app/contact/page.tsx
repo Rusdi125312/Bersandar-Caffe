@@ -20,9 +20,9 @@ export default function ContactPage() {
       {/* NAVBAR */}
      <header className="absolute top-0 left-0 w-full z-50">
        {/* Hapus div pembungkus tambahan, gunakan satu grid utama */}
-       <div className="w-full max-w-7xl mx-auto px-4 md:px-8 py-6 grid grid-cols-[1fr_auto] md:grid-cols-[1fr_auto_1fr] items-center">
+       <div className="w-full max-w-7xl mx-auto px-4 md:px-8 py-6 flex items-center justify-between">
          {/* Logo (Kiri) - Merapat ke kiri */}
-         <div className="flex items-center gap-3 justify-start">
+         <div className="flex-1 flex justify-star">
              <Link href="/" className="relative ml-4 w-20 h-16 md:w-32 md:h-24 transition-transform hover:scale-105">
                              <Image 
                                src="/logo-bersandar1.png" 
@@ -34,14 +34,16 @@ export default function ContactPage() {
                            </Link>
          </div>
           
-          <nav className="hidden md:flex gap-10 font-medium">
+          <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-10 font-medium">
             <a href="/" className="hover:text-[#D4A373] transition">Home</a>
             <a href="/menu" className="hover:text-[#D4A373] transition">Menu</a>
             <a href="/gallery" className="hover:text-[#D4A373] transition">Gallery</a>
             <a href="/contact" className="text-[#D4A373]">Contact</a>
           </nav>
 
-          <a href="https://wa.me/6285720937430?text=Halo%20Admin%20Bersandar,%20saya%20ingin%20reservasi." className="hidden md:block border border-[#D4A373] px-6 py-2 rounded-xl hover:bg-[#D4A373] transition">Reservasi</a>
+          <a href="https://wa.me/6285720937430?text=Halo%20Admin%20Bersandar,%20saya%20ingin%20reservasi." 
+          target="_blank"
+          className="hidden md:flex border border-[#D4A373] px-6 py-2 rounded-xl hover:bg-[#D4A373] hover:text-black transition whitespace-nowrap">Reservasi</a>
           
           <button className="md:hidden z-50 p-2" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -54,8 +56,8 @@ export default function ContactPage() {
           <div className="md:hidden bg-[#111]/95 backdrop-blur-md p-6 flex flex-col items-center gap-6 border-b border-white/10">
             <a href="/" onClick={() => setMenuOpen(false)}>Home</a>
             <a href="/menu" onClick={() => setMenuOpen(false)}>Menu</a>
-            <a href="/gallery" className="text-[#D4A373]" onClick={() => setMenuOpen(false)}>Gallery</a>
-            <a href="/contact" onClick={() => setMenuOpen(false)}>Contact</a>
+            <a href="/gallery" onClick={() => setMenuOpen(false)}>Gallery</a>
+            <a href="/contact" className="text-[#D4A373]" onClick={() => setMenuOpen(false)}>Contact</a>
             <a href="/reservasi" className="bg-[#D4A373] px-6 py-2 rounded-lg text-black font-bold">Reservasi</a>
           </div>
         )}
