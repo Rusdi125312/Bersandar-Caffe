@@ -13,7 +13,7 @@ export default function ContactPage() {
     <main className="min-h-screen bg-[#111111] text-white relative">
       {/* BACKGROUND IMAGE YANG MEMANJANG SAMPAI BAWAH HERO */}
       <div className="absolute inset-0 z-0">
-        <img src="/background-cafe.jpeg" className="w-full h-[600px] object-cover opacity-20" alt="Background" />
+        <img src="/background-cafe.jpeg" className="w-full h-[600px] object-cover opacity-40" alt="Background" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-[#111111]/80 to-[#111111]" />
       </div>
 
@@ -49,7 +49,7 @@ export default function ContactPage() {
             {menuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
-      </header>
+     
 
       {/* MOBILE MENU DROPDOWN */}
        {menuOpen && (
@@ -61,55 +61,71 @@ export default function ContactPage() {
             <a href="/reservasi" className="bg-[#D4A373] px-6 py-2 rounded-lg text-black font-bold">Reservasi</a>
           </div>
         )}
-
+       </header>
       {/* CONTACT HERO (Dibuat relative agar berada di atas background) */}
-      <section className="relative z-10 py-20 px-6 text-center">
+      <section className="relative z-10 pt-32 pb-12 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-serif mb-6">Hubungi Kami</h1>
         <p className="text-gray-400 max-w-lg mx-auto">Kami selalu terbuka untuk teman-teman baru. Pilih saluran di bawah untuk berinteraksi lebih dekat.</p>
       </section>
 
-      {/* CONTACT GRID */}
-      <section className="relative z-10 pb-20 px-6 max-w-5xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-6">
-          
-          {/* WhatsApp */}
-          <a href="https://wa.me/6285720937430?text=Halo%20Admin."
-         target="_blank" className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-[#25D366] transition group flex items-center gap-6">
-            <div className="p-4 bg-[#25D366]/20 rounded-full text-[#25D366]"><MessageCircle size={32} /></div>
-            <div>
-              <h3 className="text-xl font-semibold">WhatsApp</h3>
-              <p className="text-gray-400">Respon cepat untuk reservasi.</p>
-            </div>
-          </a>
+     {/* CONTACT GRID */}
+<section className="relative z-10 pb-20 px-4 md:px-6 max-w-5xl mx-auto">
+  {/* grid-cols-1: Ukuran default (Mobile) 
+     gap-4: Jarak antar card lebih kecil di mobile 
+     md:gap-6: Jarak normal di desktop
+  */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+    
+    {/* WhatsApp */}
+    <a href="https://wa.me/6285720937430?text=Halo%20Admin."
+       target="_blank" 
+       className="bg-white/5 border border-white/10 p-6 md:p-8 rounded-2xl hover:border-[#25D366] transition group flex items-center gap-4 md:gap-6">
+      <div className="p-3 md:p-4 bg-[#25D366]/20 rounded-full text-[#25D366] flex-shrink-0">
+        <MessageCircle size={24} className="md:size-8" />
+      </div>
+      <div>
+        <h3 className="text-lg md:text-xl font-semibold">WhatsApp</h3>
+        <p className="text-sm md:text-base text-gray-400">Respon cepat untuk reservasi.</p>
+      </div>
+    </a>
 
-          {/* Instagram */}
-          <a href="https://www.instagram.com/bersandarcoffeeandspace?igsh=MWFyZGZ1bTQ2anlsYw==" target="_blank" className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-[#E1306C] transition group flex items-center gap-6">
-            <div className="p-4 bg-[#E1306C]/20 rounded-full text-[#E1306C]"></div>
-            <div>
-              <h3 className="text-xl font-semibold">Instagram</h3>
-              <p className="text-gray-400">Update konten harian kami.</p>
-            </div>
-          </a>
+    {/* Instagram */}
+    <a href="https://www.instagram.com/bersandarcoffeeandspace" target="_blank" 
+       className="bg-white/5 border border-white/10 p-6 md:p-8 rounded-2xl hover:border-[#E1306C] transition group flex items-center gap-4 md:gap-6">
+      <div className="p-3 md:p-4 bg-[#E1306C]/20 rounded-full text-[#E1306C] flex-shrink-0">
+        <Music size={24} className="md:size-8" /> 
+      </div>
+      <div>
+        <h3 className="text-lg md:text-xl font-semibold">Instagram</h3>
+        <p className="text-sm md:text-base text-gray-400">Update konten harian kami.</p>
+      </div>
+    </a>
 
-          {/* TikTok */}
-          <a href="https://www.tiktok.com/@bersandar_id?_r=1&_t=zs-95evgkwj0pi" target="_blank" className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-white transition group flex items-center gap-6">
-            <div className="p-4 bg-white/20 rounded-full text-white"><Music size={32} /></div>
-            <div>
-              <h3 className="text-xl font-semibold">TikTok</h3>
-              <p className="text-gray-400">Konten seru di Bersandar.</p>
-            </div>
-          </a>
+    {/* TikTok */}
+    <a href="https://www.tiktok.com/@bersandar_id" target="_blank" 
+       className="bg-white/5 border border-white/10 p-6 md:p-8 rounded-2xl hover:border-white transition group flex items-center gap-4 md:gap-6">
+      <div className="p-3 md:p-4 bg-white/20 rounded-full text-white flex-shrink-0">
+        <Music size={24} className="md:size-8" />
+      </div>
+      <div>
+        <h3 className="text-lg md:text-xl font-semibold">TikTok</h3>
+        <p className="text-sm md:text-base text-gray-400">Konten seru di Bersandar.</p>
+      </div>
+    </a>
 
-          {/* Lokasi */}
-          <a href="https://tr.ee/89otQgJKyY" target="_blank" className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-amber-500 transition group flex items-center gap-6">
-            <div className="p-4 bg-amber-500/20 rounded-full text-amber-500"><MapPin size={32} /></div>
-            <div>
-              <h3 className="text-xl font-semibold">Lokasi</h3>
-              <p className="text-gray-400">Klik untuk navigasi via Maps.</p>
-            </div>
-          </a>
-        </div>
-      </section>
+    {/* Lokasi */}
+    <a href="https://tr.ee/89otQgJKyY" target="_blank" 
+       className="bg-white/5 border border-white/10 p-6 md:p-8 rounded-2xl hover:border-amber-500 transition group flex items-center gap-4 md:gap-6">
+      <div className="p-3 md:p-4 bg-amber-500/20 rounded-full text-amber-500 flex-shrink-0">
+        <MapPin size={24} className="md:size-8" />
+      </div>
+      <div>
+        <h3 className="text-lg md:text-xl font-semibold">Lokasi</h3>
+        <p className="text-sm md:text-base text-gray-400">Klik untuk navigasi via Maps.</p>
+      </div>
+    </a>
+  </div>
+</section>
 
       <footer className="py-10 text-center border-t border-white/10 text-gray-500 text-sm">
         &copy; {new Date().getFullYear()} Bersandar Coffee & Space.
