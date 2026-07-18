@@ -66,7 +66,7 @@ export default function GalleryPage() {
             <a href="/menu" onClick={() => setMenuOpen(false)}>Menu</a>
             <a href="/gallery" className="text-[#D4A373]" onClick={() => setMenuOpen(false)}>Gallery</a>
             <a href="/contact" onClick={() => setMenuOpen(false)}>Contact</a>
-            <a href="/reservasi" className="bg-[#D4A373] px-6 py-2 rounded-lg text-black font-bold">Reservasi</a>
+            <a href="https://wa.me/6285720937430?text=Halo%20Admin%20Bersandar,%20saya%20ingin%20reservasi." className="bg-[#D4A373] px-6 py-2 rounded-lg text-black font-bold">Reservasi</a>
           </div>
         )}
       </header>
