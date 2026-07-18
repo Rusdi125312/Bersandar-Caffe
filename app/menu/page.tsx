@@ -242,7 +242,7 @@
           {items.map((item) => (
             <div
               key={item.id}
-              className="relative h-[400px] md:h-[500px] w-full rounded-[30px] bg-[#1a1a1a] group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-[#D4A373]/20 transition-all duration-500 overflow-visible"
+              className="relative h-[500px] md:h-[500px] w-full rounded-[30px] bg-[#1a1a1a] group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-[#D4A373]/20 transition-all duration-500 overflow-visible"
             >
               {/* Gambar */}
               <div className="absolute inset-0 w-full h-full rounded-[30px] overflow-hidden transition-all duration-500 group-hover:-translate-y-8 group-hover:scale-110 group-hover:shadow-2xl">

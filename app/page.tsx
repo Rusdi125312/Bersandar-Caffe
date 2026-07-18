@@ -58,7 +58,7 @@ export default function Home() {
                              />
                            </Link>
          </div>
-          {/* Menu */}
+        
        {/* Menu Desktop */}
     <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-10 font-medium">
       <a href="/" className="relative">Home<span className="absolute -bottom-3 left-0 w-full h-[2px] bg-[#D4A373]" /></a>
